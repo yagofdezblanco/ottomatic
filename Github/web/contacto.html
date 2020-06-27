@@ -1,0 +1,113 @@
+<!Doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>OTTOMATIC</title>
+	<link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
+	<link rel="stylesheet" href="css/miestilo3.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+	<a id = "home"></a>
+	<nav class="topnav">
+		<a href=".\ottomatic.html"><i class="fa fa-fw fa-home"></i>INICIO</a>
+		<a href=".\contacto.html" class="active"><i class="fa fa-envelope-o fa-fw"></i>CONTACTO</a>
+		<a href=".\register\register.php" class = "fright"><i class="fa fa-user"></i> NUEVO USUARIO</a>
+		<a href=".\login\login.php" class = "fright"><i class="fa fa-user"></i> INICIAR SESION</a>
+	</nav>
+	<h1>CONTACTA CON NOSOTROS</h1>
+	<section class="animation-case">
+		<span class="animation">
+			<span class="circle"></span>
+			<span class="circle"></span>
+			<span class="circle"></span>
+		</span>
+	</section>
+	<section>
+		<span>
+			<a href="https://paginasamarillas.es" target="_blank">
+				<img class="tele" src="https://images.vexels.com/media/users/3/141328/isolated/preview/be7f7eb1f18933369cf644f87bc8c74b-icono-de-telefono-redondo-by-vexels.png">
+			</a>
+		</span>
+		<span>
+			<a href="https://twitter.es" target="_blank">
+				<img class="twt" src="https://i1.wp.com/marsfallpodcast.com/wp-content/uploads/2017/09/Twitter-Download-PNG.png?ssl=1">
+			</a>
+		</span>
+		<span>
+			<a href="mailto:ottomatic.domotics@gmail.com" target="_top">
+				<img class="mail" src="https://png.pngtree.com/svg/20170713/mail_123245.png">
+			</a>
+		</span>
+	</section>
+	<section>
+		<form>
+			<div>
+				<label>
+					Nombre: <input type="text" name="nombre" size="40"><br><br>
+				</label>
+			</div>
+			<div>
+				<label>
+					Apellidos: <input type="text" name="apellidos" size="40" placeholder="Escriba sus dos apellidos"><br><br>
+				</label>
+			</div>
+			<div>
+				<label>
+					Sexo:
+						<input type="radio" name="sex" value="h"/> Hombre
+						<input type="radio" name="sex" value="m"/> Mujer
+						<input type="radio" name="sex" value="o"/> Otro<br><br>
+				</label>
+			</div>
+			<div>
+				<label>
+					Telefono <input type="tel" name="tel" size="40"/><br><br>
+				</label>
+			</div>
+			<div>
+				<label>
+					Selecciona su provincia: 
+						<select name="select">
+							<option value="value1">LUGO</option> 
+							<option value="value2" selected>A CORUÑA</option>
+							<option value="value3">ORENSE</option>
+							<option value="value3">POTEVEDRA</option>
+						</select>
+				</label>
+			</div>
+			<div>
+				<label>
+					Selecciona tu fecha de nacimiento:
+					<input type="date" name="date"><br><br>
+				</label>
+			</div>
+			<div>
+				<label>
+					Mensaje: <input type="textarea" name="mensaj" size="200"/><br><br>
+				</label>
+			</div>
+			<div>
+				<input class="butsend" type="submit" value="Enviar"/>
+				<input class="butdel" type="reset" value="Borrar"/>
+			</div>
+		</form>
+	</section>
+	<br>	
+	<hr>
+	<footer>
+		<a id="contactmail"></a>
+		<p>
+			<i class="fa fa-code"></i> Web made by Yago Fernández.
+		</p>
+		<p>
+			<i class="fa fa-envelope-o fa-fw"></i> Contact us: 
+			<a class="ref" href="mailto:ottomatic.domotics@gmail.com" target="_top">mail</a>.
+		</p>
+		<p>
+			<a class="ref" href="#home"><i class="fa fa-fw fa-home"></i>Home</a>
+		</p>
+		<br>
+	</footer>
+</body>
+</html>

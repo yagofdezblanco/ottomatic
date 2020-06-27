@@ -1,0 +1,157 @@
+	/*DAMOS ESTILO AL HTML DE MANERA GENRICA PARA TENER UNA BASE COMÚN*/
+	html {
+		background:#ddd;
+		color: #333;
+		font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	}
+
+	/*AJUSTAMOS LOS MARGENES PARA QUE LA PAGINA TENGA CONSISTENCIA*/
+	* {
+		border: 0;
+		margin: 0;
+		outline: none;
+	}
+
+	/*AJUSTAMOS LA BARRA DE NAVEGACION AÑADIENDO UN OVERFLOW HIDDEN PARA QUE SI SE REDIMENSIONA NO FALLE */
+	/*USAMOS UN SELECTOR DE ATRIBUTO POR QUE QUEREMOS QUE AFECTE A TODOS LOS NAV*/
+	nav {
+		overflow: hidden;
+		background-color: #333;
+		border-bottom: 1px solid;
+	}
+
+	/*DAMOS ESTILO A LOS ELEMENTOS QUE VA A TENER LA BARRA DE NAVEGACION*/
+	/*USAMOS UN SELECTOR DESCENDIENTE PARA QUE AFECTE A TODOS LOS ELEMENTOS a DEL NAV*/
+	nav a {
+		float: left;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+	}
+
+	/*DAMOS ESTILO A CUANDO PASAMOS POR ENCIMA EL RATON DE LOS ELEMENTOS DEL NAV*/
+	nav a:hover {
+		background-color: #ddd;
+		color: black;
+	}
+
+	/*DAMOS ESTILO A CUANDO EL ELEMENTO ESTA ACTIVO, ES DECIR, LA PAGINA EN LA CUAL NOS SITUAREMOS*/
+	nav a.active {
+		background-color: #ddd;
+		color: black;
+	}
+
+	/*COMO DE MANERA POR DEFECTO LOS ELEMENTOS DEL NAV SE AJUSTAN A LA IZQ DE ESTA MANERA PODEMOS AJUSTARLOS AL LADO OPUESTO */
+	/*USAMOS UN SELECTOR DE CLASE POR QUE QUEREMOS USARLO VARIAS VECES YA QUE NOS SERA UNA HERRAMIENTA MUY UTIL*/
+	.fright {
+		float: right;
+	}
+
+	h1 {
+		position: absolute;
+		margin-left: 19%;
+		padding-top: 40px;
+		font-size: 70px;
+		font-family: Baskerville;
+		text-decoration: none;
+		color: #333;
+		
+	}
+
+	form {
+		background-color: #333;
+		color:#ddd;
+		border: solid #ddd;
+		border-radius: 8px;
+		padding: 10px;
+		margin-top: 10px;
+		margin-left: 50px;
+		margin-right: 50px;
+		margin-bottom: 60px;
+	}
+
+	label:hover {
+		background-color: grey;
+	}
+
+	.butsend {
+		font-size: 18px;
+		border-radius: 50px;
+		background-color: green;
+		color: white;
+	}
+
+	.butdel {
+		font-size: 18px;
+		border-radius: 50px;
+		background-color: red;
+		color: white;
+	}
+
+	.animation-case {
+		padding-top: 150px;
+		text-align: center;
+	}
+	/*PARA LOS CIRCULOS DAMOS UN ESTILO PARTICULAR QUE SE ADAPTE A LA WEB*/
+	.circle {
+		display: inline-block;
+		text-align: center;
+		padding-bottom: 10px; 
+		margin: 3px;
+		width: 15px;
+		height: 15px;
+		border-radius: 15px;
+		background-color: #333;
+	}
+	/*DAREMOS LA MISMA ANIMACION A LOS 3 PUNTOS PERO CON UN DELEAY DIFERENTE ASI CUANDO UNO SUBA OTRO BAJA Y VICEVERSA*/
+	/*PARA ELLO USAMOS LA MISMA FUNCION QUE USAMOS EN LA TABLA DE ARRIBA PARA DARLE A UN VALOR SI Y OTRO NO "NTH-LAST-CHILD"*/
+	/*ADEMAS COMO ES LA MISMA FUNCION SOLO NECESITAREMOS UNA A LA QUE LLAMAMOS CON VALORES DISTINTOS ESTA FUNCION LA LLAMAMOS "ANIM"*/
+	.animation .circle:nth-last-child(1) {animation: anim .8s .1s linear infinite;}
+	.animation .circle:nth-last-child(2) {animation: anim .8s .2s linear infinite;}
+	.animation .circle:nth-last-child(3) {animation: anim .8s .3s linear infinite;}
+
+	/*ES UNA TRASLACION SIMPLE EN EL 0 ESTA EN EL 0,0; AL 50% SITUAREMOS EL ELEMENTO EN EL 0,15PX Y AL FINAL VOLVEMOS AL MOMENTO INICIAL*/
+	@keyframes anim {
+		0 {transform: translate(0,0);}
+		50% {background-color: #ddd; transform: translate(20px,0px);}
+		100% {transform: translate(0,0);}
+	}
+
+	.tele {
+		padding-left: 500px;
+		padding-bottom: 60px;
+		padding-right: 60px;
+		height: 100px;
+		width: 100px;
+	}
+
+	.twt {
+		padding: 60px;
+		height: 100px;
+		width: 100px;
+	}
+
+	.mail {
+		padding: 60px;
+		height: 120px;
+		width: 120px;
+	}
+	
+	.ref{
+		color: #61666d;
+	}
+	
+	footer {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		text-align: center;
+		padding-top: 1px;
+		background-color: #333;
+		color: #ddd;
+	}
+	footer p {
+		font-size: 17px;
+	}
